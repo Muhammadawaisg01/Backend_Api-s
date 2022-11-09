@@ -20,7 +20,7 @@ app.post('/post', async (req, res) => {
 
     try {
         const dataToSave = await data.save();
-        res.json(dataToSave)
+        res.json(dataToSave);
     } catch (error) {
         res.status(400).json({ message: error.message });
     }
